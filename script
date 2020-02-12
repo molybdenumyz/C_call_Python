@@ -1,0 +1,5 @@
+apt install python3-dev
+apt install python-numpy
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/python3/
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/include/python3
+g++ --std=c++11 main.cpp -lpython3m -o main.o
